@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/UIElementsSchema
+/Temp
+/ProjectSettings
+/Packages
+/obj
+/Logs
+/Library
+/Doodle Jump Clone.sln
+/Assets
+/Assembly-CSharp.csproj
+/.vsconfig
+/.vs
+/.gitattributes
