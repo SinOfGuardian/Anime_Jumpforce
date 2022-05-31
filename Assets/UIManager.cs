@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
     public GameObject GameOverMenu;
     public Health playHealth;
         
-    public void OnEnable()
+   /* public void OnEnable()
     {
         playHealth.isPlayerDeath += EnableGameOverMenu();
 
@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
     {
         playHealth.isPlayerDeath -= EnableGameOverMenu();
 
-    }
+    }*/
     public void EnableGameOverMenu()
     {
         GameOverMenu.SetActive(true);

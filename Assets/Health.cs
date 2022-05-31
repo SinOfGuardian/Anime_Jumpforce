@@ -28,7 +28,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int amount)
     {
 
-        //currentHealth -= amount;
+        currentHealth -= amount;
         // bar.DrawHeart();
         Debug.Log("Im Hit");
         onPlayerDamaged?.Invoke();

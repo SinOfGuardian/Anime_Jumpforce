@@ -8,7 +8,7 @@ public class Bar : MonoBehaviour
      public Health playHealth;
     List<HealtheartBar> hearts = new List<HealtheartBar>();
 
-    private void OnEnable()
+   /* private void OnEnable()
     {
         playHealth.onPlayerDamaged += DrawHeart();
     }
@@ -16,7 +16,7 @@ public class Bar : MonoBehaviour
     {
         playHealth.onPlayerDamaged -= DrawHeart();
         //playHealth.OnPlayerDamaged -= DrawHeart();
-    }
+    }*/
 
     private void Start()
     {
@@ -26,9 +26,9 @@ public class Bar : MonoBehaviour
     {
         ClearHearts();
 
-        float maxHealthRemainder = playHealth.maxHealth % 2;
-        int heartsToMake = (int)((playHealth.maxHealth / 2) + maxHealthRemainder);
-        for(int i = 0; i < heartsToMake; i++)
+        //float maxHealthRemainder = playHealth.maxHealth % 2;
+        int heartsToMake = (int)(playHealth.maxHealth / 2);//monsterdamage
+        for (int i = 0; i < heartsToMake; i++)
         {
             CreateEmptyHeart();
         }

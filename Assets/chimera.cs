@@ -30,6 +30,7 @@ public class chimera : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             var healthComponent = collision.GetComponent<Health>();
+
             if (healthComponent != null)
             {
                 healthComponent.TakeDamage(1);
