@@ -8,10 +8,18 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     private void LateUpdate()
     {
-        if(target.position.y > transform.position.y)
+        if (target.position.y > transform.position.y)
         {
             Vector3 newPosition = new Vector3(transform.position.x, target.position.y, transform.position.z);
-            transform.position = newPosition; 
+            transform.position = newPosition;
+        }
+        if (target.position.y + 7 < transform.position.y)
+        {
+            Time.timeScale = 0;
+            // SceneManager.LoadScene("GameOver");
+            //PauseMenuUI.gameObject.SetActive(true);
+            //GameOver();
+
         }
     }
 }
